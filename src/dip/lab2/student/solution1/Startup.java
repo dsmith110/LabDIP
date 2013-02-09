@@ -35,7 +35,9 @@ public class Startup {
         
         TipService t = new TipService(tip);
         
-        System.out.println(t.getTip());
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        
+        System.out.println(nf.format(t.getTip()));
         
     }
 
